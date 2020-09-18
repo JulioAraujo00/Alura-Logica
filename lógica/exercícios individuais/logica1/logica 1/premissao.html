@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function pulaLinha() {
+            document.write("<br><br>");
+        }
+        function mostra(texto) {
+            document.write(texto);
+            pulaLinha();
+        }
+        
+        var idade = Number(prompt("Qual sua idade?"));
+        var temHabilitação = prompt("Você sem habilitação para dirigir? Responda S ou N");
+
+        if (idade >= 18 && temHabilitação == "S") {
+                mostra("Pode dirigir");   
+        } else {
+            mostra("Não pode dirigir!");
+        }
+        
+    </script>
+</body>
+</html>

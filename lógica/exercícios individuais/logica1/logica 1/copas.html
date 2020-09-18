@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+       function pulaLinha () {
+           document.write("<br><br>");
+       }
+       function mostra (frase) {
+           document.write(frase);
+           pulaLinha();
+       }
+    var anoCopa = 1930;
+    var anoSelecionado = Number(prompt("Digite até qul ano você deseja."))
+
+       while (anoCopa <= anoSelecionado){
+           mostra("Teve copa em " + anoCopa);
+           anoCopa = anoCopa + 4;
+       }
+    mostra("fim")
+   </script> 
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <script>
+      function pulaLinha(){
+          document.write("<br><br>");
+      }
+      function mostra(frase) {
+          document.write(frase);
+          pulaLinha();
+      }
+
+      var loginCadastrado = "alura";
+      var senhaCadastrada = "alura123";
+
+     var maximoTentativas = 3;
+     var tentativaAtual = 1;
+
+     while(tentativaAtual <= maximoTentativas){
+
+         var loginInformado = prompt("Informe seu login");
+         var senhaInformada = prompt("Informe sua senha.")
+    
+        if (loginCadastrado == loginInformado && senhaCadastrada ==senhaInformada) {
+            alert("Seja bem vindo, " + loginInformado);
+
+            tentativaAtual = maximoTentativas;
+
+        } else {
+            if (tentativaAtual ==3) {
+                alert("Número permitido de tentativas esgotado");
+            } else {
+                alert("Login Invalido. Tente novamente");
+            }
+        }
+        tentativaAtual = tentativaAtual ++;
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function pulaLinha() {
+            document.write("<br><br>");
+        }
+        function mostra(frase) {
+            document.write(frase);
+            pulaLinha();
+        }
+        var numero = 30;
+
+        while (numero <= 40) {
+
+            if (numero == 33) {
+                numero = numero +1;
+            }
+            if (numero == 37) {
+                numero = numero +1;
+            }
+            else {
+                mostra(numero);
+                numero = numero + 1;
+            }
+ 
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            function pulaLinha() {
+                document.write("<br><br>");
+            }
+            function mostra(frase) {
+                document.write(frase);
+                pulaLinha();
+            }
+
+            var peso = Number(prompt("Digite seu Peso"));
+            var altura = Number(prompt("Agora sua altura"));
+
+            var imc = Math.round(peso / (altura * altura));
+
+            mostra("seu imc é " + imc);
+
+            if (imc < 10) {
+                mostra("Cuidado, você está em Desnutrição Grau V");
+            } else if (imc >= 10.1 && imc <=12.9 ) {
+                mostra("Cuidado, você está em Desnutrição Grau IV");
+            } else if (imc >=13 && imc <=15.9) {
+                mostra("Cuidado, você está em Desnutrição Grau III");
+            } else if (imc >= 16 && imc <=16.9) {
+                mostra("Cuidado, você está Desnutrição Grau II");
+            } else if (imc >= 17 && imc <= 18.4) {
+                mostra("Preste atenção, você está Desnutrição Grau I");
+            } else if (imc >=18.5 && imc ==24.9) {
+                mostra("Seu IMC está normal");
+            } else if (imc >=25 && imc <= 29.9) {
+                mostra ("Atenção, você está em Pré-Obesidade");
+            } else if (imc >= 30 && imc<= 34.5) {
+                mostra("Atenção, você está em Obesidade Grau I")
+            } else if (imc >= 35 && imc<= 39.9) {
+                mostra("Atenção, você está em Obesidade Grau II")
+            } else {
+                mostra("Atenção, você está em Obesidade Grau III")
+            }
+            mostra("FIM")
+        </script>
+    </body>
+    </html>
+</body>
+</html>
